@@ -11,9 +11,7 @@ module Mongoid
       end
 
       def self.set name, &block
-        i = new
-        block.call i
-
+        i = new &block
         @@instances_[ i ] = name
         @@instances[ name ] = i
       end

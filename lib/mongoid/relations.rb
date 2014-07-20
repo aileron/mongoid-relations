@@ -1,4 +1,5 @@
 require "mongoid/relations/version"
+require "mongoid"
 
 module Mongoid
   module Relations
